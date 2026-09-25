@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    
+}
+
+.head {
+    width: 100%;
+    background-color: rgb(27, 45, 81);
+    padding: 30px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-self: center;
+    gap: 30px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.banner img {
+    width: 100%;
+    height: 80vh;
+
+}
+
+.banner h1 {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    right: 460px;
+    display: flex;
+    letter-spacing: 5px;
+}
+
+.banner p {
+    position: absolute;
+    right: 500px;
+    top: 90px;
+    color: white;
+    display: flex;
+    word-spacing: 5px;
+}
+
+.services {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+
+}
+
+.services h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.services p {
+    color: gray;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    margin: 50px;
+}
+
+.round i {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(purple, #9c27b0, #ff00ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    margin: 0 auto 20px;
+}
+
+.round {
+
+    height: 250px;
+    width: 250px;
+    margin: 50px;
+    text-align: center;
+}
+
+.portfolio {
+    background-color: white;
+    width: 100%;
+
+}
+
+.portfolio {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+
+}
+
+.portfolio h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.portfolio p {
+    color: gray;
+}
+
+.sides {
+    display: flex;
+
+    margin: 50px;
+}
+
+
+.side1 {
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.side1 li {
+    list-style: none;
+    line-height: 50px;
+}
+
+.side2 {
+
+   margin: 25px;
+}
+
+.side2 img {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+
+}
+
+.blog {
+    width: 100%;
+    background-color: white;
+
+}
+
+.blog h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog p {
+    color: gray;
+    text-align: center;
+}
+
+.box {
+    width: 250px;
+    height: 500px;
+    padding: 70px;
+    display: flex;
+    gap: 80px;
+    margin: 50px;
+}
+
+.cantant img {
+    width: 250px;
+    height: 150px;
+
+}
+
+.cantant p {
+    color: gray;
+    text-align: left;
+}
+
+.cantant a {
+    color: purple;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer{
+    width:90%;
+    margin:auto;
+    background:#c8c0c0;
+    padding:35px 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.icon i{
+    width:80px;
+    height:80px;
+    background:#2c4675;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+}
+
+.text h4{
+    margin-bottom:10px;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.text p{
+    margin:4px 0;
+    color:#666;
+    line-height:1.5;
+}
