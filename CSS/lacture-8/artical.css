@@ -1,0 +1,45 @@
+.main {
+    border: 1px;
+    background-color: rgb(203, 199, 199);
+   height: 800px;
+    margin: 10px;
+
+
+}
+
+.first {
+    border: 1px solid gray;
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.first h1::first-letter {
+    color: red;
+    font-size: 50px;
+
+}
+
+
+.first h1 {
+    text-align: center;
+}
+
+.p1 {
+    background-color: rgb(250, 252, 205);
+    border-left: 4px solid red;
+}
+
+.p2 {
+    border: 8px solid rgb(205, 237, 234);
+    background-color: rgb(154, 234, 185);
+}
+
+.first p {
+
+    margin: 5px 0;
+}
+.main .first:nth-child(even){
+    background-color: white;
+}

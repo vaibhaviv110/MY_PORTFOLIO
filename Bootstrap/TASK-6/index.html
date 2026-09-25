@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #fef9ea;">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg" style="background-color: #fffdf9;">
+            <div class="container-fluid px-5 ">
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="./images/logo.png" alt="Logo" style="height: 42px; width: 42px; object-fit: contain;">
+                    <b style="font-size: 20px;">Bites</b>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- MENU -->
+                    <ul class="navbar-nav mx-auto gap-lg-4 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <button type="button" class="rounded-circle d-flex align-items-center justify-content-center"
+                            style=" width:45px; height:45px;background:white; border:2px solid #e6d8a8;">
+
+                            <i class="fa-solid fa-gift"></i>
+                        </button>
+                        <!-- RESERVE TABLE -->
+                        <button type="button" class="btn rounded-pill px-4 py-2 fw-semibold"
+                            style="background-color:#f3bd45;border:none;">
+                            Reserve Table
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <!--hero-section-->
+        <div>
+            <div style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <h1 class="fw-bold text-center">Our Regular Menu Pack</h1>
+            </div>
+            <div class="container py-5">
+                <div class="row justify-content-center g-3">
+
+                    <div class="col-6 col-sm-4 col-md-auto">
+                        <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold "> Special
+                            Foods</button>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-auto">
+                        <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold"> Mexican
+                        </button>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-auto">
+                        <button type="button" class="btn btn-warning rounded-pill text-dark fw-bold">Italian</button>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-auto">
+                        <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold ">Japanese
+                        </button>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-auto">
+                        <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold">Drinks
+                        </button>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-auto">
+                        <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold"> Lunch
+                        </button>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-auto">
+                        <button type="button" class="btn btn-outline-warning rounded-pill text-dark fw-bold"> More Item
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--cards-->
+        <div class="container">
+            <div class="row row-gap-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card" >
+                        <img src="./images/pasta.png" class="card-img-top" alt="card1" style="height: 12rem;">
+                        <div class="card-body align-items-center text-center">
+                            <h5 class="card-title text-center fw-bold">Pasta</h5>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-bold">$35.00</h4>
+                                <a href="#" class="btn btn-outline-warning rounded-pill text-dark">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card" >
+                        <img src="images/french fires.jpg" class="card-img-top" alt="card2" style="height: 12rem;">
+                        <div class="card-body align-items-center text-center">
+                            <h5 class="card-title text-center fw-bold">French Fires</h5>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-bold">$55.00</h4>
+                                <a href="#" class="btn btn-outline-warning rounded-pill text-dark">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./images/chiken.jpg" class="card-img-top" alt="card3" style="height: 12rem;">
+                        <div class="card-body align-items-center text-center">
+                            <h5 class="card-title text-center fw-bold">Chicken Showarma</h5>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-bold">$35.00</h4>
+                                <a href="#" class="btn btn-outline-warning rounded-pill text-dark">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./images/samosa.jpg" class="card-img-top" alt="card4" style="height: 12rem;">
+                        <div class="card-body align-items-center text-center">
+                            <h5 class="card-title text-center fw-bold">Samosa</h5>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-bold">$45.00</h4>
+                                <a href="#" class="btn btn-outline-warning rounded-pill text-dark">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card" >
+                        <img src="./images/chiken.jpg" class="card-img-top" alt="card4" style="height: 12rem;">
+                        <div class="card-body align-items-center text-center">
+                            <h5 class="card-title text-center fw-bold">Fish Carry</h5>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-bold">$35.00</h4>
+                                <a href="#" class="btn btn-outline-warning rounded-pill text-dark">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card" >
+                        <img src="./images/samosa.jpg" class="card-img-top" alt="card4" style="height: 12rem;">
+                        <div class="card-body align-items-center text-center">
+                            <h5 class="card-title text-center fw-bold">Samosa</h5>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-bold">$45.00</h4>
+                                <a href="#" class="btn btn-outline-warning rounded-pill text-dark">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./images/pasta.png" class="card-img-top" alt="card4" style="height: 12rem;">
+                        <div class="card-body align-items-center text-center">
+                            <h5 class="card-title text-center fw-bold">Pasta</h5>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                           
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-bold">$40.00</h4>
+                                <a href="#" class="btn btn-outline-warning rounded-pill text-dark">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card" >
+                        <img src="./images/french fires.jpg" class="card-img-top" alt="card4" style="height: 12rem;">
+                        <div class="card-body align-items-center text-center">
+                            <h5 class="card-title text-center fw-bold">French Fries</h5>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(231, 183, 71);"></i>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card’s content.</p>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-bold">$65.00</h4>
+                                <a href="#" class="btn btn-outline-warning rounded-pill text-dark">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> <br>
+        <hr> <br><br>
+        <footer class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <h3 class="fw-bold">Subscribe Our <br> Newsletter</h3>
+                    <br>
+                    <div>
+                        <input type="text"
+                            style="border: 0; border-bottom: 2px solid goldenrod; background-color: transparent; padding: 2px;"
+                            placeholder="Enter Your Email">
+                        <i class="fa-solid fa-arrow-right py-2"
+                            style="width: 35px; height: 35px; background-color: #ecc062; border-radius: 50%;"></i>
+                    </div> <br>
+                    <i class="fa-brands fa-facebook-f  py-2"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid black;"></i>
+                    <i class="fa-brands fa-twitter py-2"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid black;"></i>
+                    <i class="fa-brands fa-instagram py-2"
+                        style="width: 35px; height: 35px; border-radius: 50%;  background-color: #ecc062;"></i>
+                    <i class="fa-brands fa-youtube  py-2"
+                        style="width: 35px; height: 35px; border-radius: 50%; border: 1px solid black;"></i>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h3 style="font-family:cursive;">Service</h3>
+                    <ul class="list-unstyled">
+                        <li>Online Order</li>
+                        <li>Pre-Reservation</li>
+                        <li>24/7 Services</li>
+                        <li>Foodie Placer</li>
+                        <li>Super Chafe</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h3 style="font-family:cursive;">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li>Menu</li>
+                        <li>Reviews</li>
+                        <li>Blogs</li>
+                        <li>Reseve Table</li>
+                        <li>Order Foods</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h3 style="font-family:cursive;">About</h3>
+                    <ul class="list-unstyled">
+                        <li>Our Story</li>
+                        <li>Benifits</li>
+                        <li>Corner</li>
+                        <li>Our Chefs</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h3 style="font-family:cursive;">Help</h3>
+                    <ul class="list-unstyled">
+                        <li>Contact</li>
+                        <li>Support</li>
+                        <li>FAQ</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        <br><br>
+    </div>
+
+
+</body>
+
+</html>

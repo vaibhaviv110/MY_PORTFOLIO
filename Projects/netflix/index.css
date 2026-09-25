@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.bgimg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.right-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.lang-box {
+    border: 1px solid #aaa;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+
+.lang-box i {
+    margin-right: 5px;
+}
+
+.lang-box select {
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.lang-box option {
+    color: black;
+}
+
+.signbtn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= HERO CONTENT ================= */
+
+.cantaint {
+    width: 80%;
+    margin: 150px auto 0;
+    text-align: center;
+}
+
+.cantaint h1 {
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+.cantaint p {
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.button input {
+    width: 380px;
+    padding: 17px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+.gsbtn {
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.maincontaint {
+    padding-top: 50px;
+}
+
+.trending {
+    width: 80%;
+    margin: auto;
+}
+
+.trending h4,
+.join h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* ================= TRENDING CARDS ================= */
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 10px 25px;
+    scrollbar-width: none;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 180px;
+    height: 270px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.num {
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+    font-size: 80px;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+
+/* ================= JOIN CARDS ================= */
+
+.join {
+    width: 80%;
+    margin: 50px auto 20px;
+}
+
+.card-contnat {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card1 {
+    min-height: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #192044, #210e17);
+    position: relative;
+}
+
+.card1 h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card1 p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.card1 i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 45px;
+    color: #e50914;
+}
+
+/* ================= FAQ ================= */
+
+.question {
+    width: 80%;
+    margin: 20px auto 70px;
+}
+
+.quebox {
+    background: #2d2d2d;
+    padding: 25px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quebox p {
+    font-size: 20px;
+}
+
+.quebox i {
+    font-size: 25px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    color: #aaa;
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.footer-form input {
+    width: 400px;
+    padding: 16px;
+    background: #111;
+    border: 1px solid #777;
+    color: white;
+}
+
+.footer-form button {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-weight: bold;
+}
+
+.call {
+    margin-bottom: 30px;
+}
+
+.footer a {
+    color: #aaa;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.link-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.language {
+    margin-top: 35px;
+    padding: 10px 25px;
+    background: black;
+    color: white;
+    border: 1px solid #777;
+}
+
+.country {
+    margin-top: 25px;
+}
+
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media (max-width: 992px) {
+
+    .header,
+    .trending,
+    .join,
+    .card-contnat,
+    .question,
+    .footer {
+        width: 90%;
+    }
+
+    .cantaint {
+        width: 90%;
+        margin-top: 130px;
+    }
+
+    .cantaint h1 {
+        font-size: 45px;
+    }
+
+    .card-contnat {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .link-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .right-btn {
+        gap: 7px;
+    }
+
+    .lang-box {
+        padding: 5px;
+    }
+
+    .lang-box i {
+        display: none;
+    }
+
+    .lang-box select {
+        font-size: 12px;
+    }
+
+    .signbtn {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    /* Hero */
+
+    .cantaint {
+        width: 90%;
+        margin-top: 120px;
+    }
+
+    .cantaint h1 {
+        font-size: 32px;
+    }
+
+    .cantaint p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button input {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .gsbtn {
+        width: 150px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Trending */
+
+    .trending h4,
+    .join h4 {
+        font-size: 20px;
+    }
+
+    .card {
+        min-width: 130px;
+        height: 200px;
+    }
+
+    .num {
+        font-size: 60px;
+    }
+
+    /* Join cards */
+
+    .card-contnat {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .card1 {
+        min-height: 220px;
+    }
+
+    /* FAQ */
+
+    .question {
+        width: 90%;
+    }
+
+    .quebox {
+        padding: 20px 15px;
+    }
+
+    .quebox p {
+        font-size: 16px;
+    }
+
+    .quebox i {
+        font-size: 20px;
+    }
+
+    /* Footer */
+
+    .footer {
+        width: 90%;
+    }
+
+    .footer-top p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .footer-form {
+        flex-direction: column;
+    }
+
+    .footer-form input {
+        width: 100%;
+    }
+
+    .footer-form button {
+        padding: 13px;
+        width: 150px;
+        margin: auto;
+    }
+
+    .link-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .link-grid a {
+        font-size: 13px;
+    }
+}
+
+
+/* ================================================= */
+/* ============== VERY SMALL MOBILE =============== */
+/* ================================================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        width: 85px;
+    }
+
+    .lang-box {
+        display: none;
+    }
+
+    .cantaint h1 {
+        font-size: 27px;
+    }
+
+    .cantaint {
+        margin-top: 100px;
+    }
+
+    .card {
+        min-width: 120px;
+        height: 180px;
+    }
+
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+}

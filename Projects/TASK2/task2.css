@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+
+.mainbg {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainbg > .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.mainbg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: -1;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ul li i {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right button {
+    background: #ff3d7f;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= HERO TEXT ================= */
+
+.text {
+    width: 90%;
+    max-width: 1200px;
+    margin: 180px auto 0;
+    color: white;
+}
+
+.text h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+
+.btn1,
+.btn2 {
+    padding: 14px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn1 {
+    background: #ff3d7f;
+    color: white;
+}
+
+.btn2 {
+    background: white;
+    color: #222;
+}
+
+/* HERO ARROWS */
+
+.lbtn,
+.rbtn {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: white;
+    color: #ff3d7f;
+    cursor: pointer;
+}
+
+.lbtn {
+    right: 30px;
+}
+
+.rbtn {
+    left: 30px;
+}
+
+/* ================= ABOUT ================= */
+
+.Aboutus {
+    width: 85%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.images {
+    position: relative;
+    min-height: 500px;
+}
+
+.images img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.img1 {
+    width: 55%;
+    height: 300px;
+    left: 0;
+    top: 0;
+}
+
+.img2 {
+    width: 45%;
+    height: 220px;
+    right: 0;
+    top: 50px;
+}
+
+.img3 {
+    width: 45%;
+    height: 220px;
+    left: 0;
+    bottom: 0;
+}
+
+.img4 {
+    width: 55%;
+    height: 300px;
+    right: 0;
+    bottom: 0;
+}
+
+.side h4 {
+    color: #ff3d7f;
+    letter-spacing: 2px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.underline {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff3d7f;
+    margin-top: 10px;
+}
+
+.side h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.side p {
+    line-height: 1.7;
+    color: #666;
+}
+
+.side h2 {
+    font-size: 45px;
+    color: #ff3d7f;
+}
+
+.side > span {
+    color: #777;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+.feature p {
+    margin: 10px 0;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 14px 25px;
+    background: #ff3d7f;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* ================= SERVICES ================= */
+
+.services {
+    background: #f8f8f8;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.services > h3,
+.pricing > h3 {
+    color: #ff3d7f;
+    letter-spacing: 2px;
+}
+
+.services > hr,
+.pricing > hr {
+    width: 50px;
+    border: none;
+    height: 3px;
+    background: #ff3d7f;
+    margin: 15px auto;
+}
+
+.services > h1,
+.pricing > h1 {
+    font-size: 40px;
+    margin-bottom: 45px;
+}
+
+.services-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sbox {
+    background: white;
+    padding: 35px 25px;
+    min-height: 280px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.sbox:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sbox > i {
+    font-size: 45px;
+    color: #ff3d7f;
+    margin-bottom: 20px;
+}
+
+.sbox h2 {
+    margin-bottom: 15px;
+}
+
+.sbox p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.sbox .RD {
+    color: #ff3d7f;
+    margin-top: 20px;
+}
+
+/* ================= PRICING ================= */
+
+.pricing {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pricebox,
+.pricebox2 {
+    padding: 40px 30px;
+    border: 1px solid #eee;
+    min-height: 430px;
+}
+
+.pricebox2 {
+    background: #ff3d7f;
+    color: white;
+}
+
+.pricebox p,
+.pricebox2 p {
+    margin: 18px 0;
+}
+
+.pricebtn {
+    background: #ff3d7f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 22px;
+}
+
+.pricebox2 .pricebtn {
+    background: white;
+    color: #ff3d7f;
+}
+
+.pbtn,
+.pbtn2 {
+    margin-top: 25px;
+    padding: 13px 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.pbtn {
+    background: #ff3d7f;
+    color: white;
+}
+
+.pbtn2 {
+    background: white;
+    color: #ff3d7f;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #171717;
+    color: #aaa;
+    padding-top: 70px;
+}
+
+.footer-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.footer-box img {
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    line-height: 1.7;
+}
+
+.footer-box h3 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.footer-box li i {
+    color: #ff3d7f;
+    margin-right: 8px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social i {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .services {
+    background: transparent;
+    padding: 0;
+    text-align: left;
+}
+
+.footer .services li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+}
+
+.copyright {
+    border-top: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.copyright span {
+    color: #ff3d7f;
+}
+
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media (max-width: 992px) {
+
+    .header {
+        width: 90%;
+    }
+
+    .ul {
+        gap: 12px;
+    }
+
+    .ul li a {
+        font-size: 11px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .text {
+        margin-top: 150px;
+    }
+
+    .text h1 {
+        font-size: 45px;
+    }
+
+    .Aboutus {
+        width: 90%;
+        gap: 40px;
+    }
+
+    .side h1 {
+        font-size: 32px;
+    }
+
+    .services-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricebox:last-child {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header {
+        width: 90%;
+        padding: 18px 0;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .right {
+        gap: 12px;
+    }
+
+    .right button {
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+
+    /* Hero */
+
+    .mainbg {
+        height: 700px;
+    }
+
+    .text {
+        width: 90%;
+        margin-top: 170px;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 32px;
+    }
+
+    .btn1,
+    .btn2 {
+        margin: 5px;
+        padding: 12px 18px;
+        font-size: 11px;
+    }
+
+    .lbtn,
+    .rbtn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .lbtn {
+        right: 10px;
+    }
+
+    .rbtn {
+        left: 10px;
+    }
+
+    /* About */
+
+    .Aboutus {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 70px auto;
+    }
+
+    .images {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .img1 {
+        width: 55%;
+        height: 220px;
+    }
+
+    .img2 {
+        width: 45%;
+        height: 170px;
+        top: 30px;
+    }
+
+    .img3 {
+        width: 45%;
+        height: 170px;
+    }
+
+    .img4 {
+        width: 55%;
+        height: 220px;
+    }
+
+    .side h1 {
+        font-size: 30px;
+    }
+
+    .side p br {
+        display: none;
+    }
+
+    /* Services */
+
+    .services {
+        padding: 60px 5%;
+    }
+
+    .services > h1,
+    .pricing > h1 {
+        font-size: 30px;
+    }
+
+    .services-box {
+        grid-template-columns: 1fr;
+    }
+
+    .sbox {
+        min-height: auto;
+    }
+
+    /* Pricing */
+
+    .pricing {
+        padding: 60px 5%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pricebox:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+
+/* ================================================= */
+/* ============== SMALL MOBILE ==================== */
+/* ================================================= */
+
+@media (max-width: 400px) {
+
+    .logo img {
+        width: 90px;
+    }
+
+    .right i {
+        font-size: 14px;
+    }
+
+    .right button {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .text {
+        margin-top: 150px;
+    }
+
+    .text h1 {
+        font-size: 27px;
+    }
+
+    .btn1,
+    .btn2 {
+        display: block;
+        width: 150px;
+        margin: 8px auto;
+    }
+
+    .images {
+        min-height: 330px;
+    }
+
+    .img1,
+    .img4 {
+        height: 180px;
+    }
+
+    .img2,
+    .img3 {
+        height: 140px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

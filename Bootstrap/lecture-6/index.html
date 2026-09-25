@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    /* Navbar */
+    .navbar-brand {
+        width: 150px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+    /* Gallery Images */
+    .gallery-img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        .navbar-brand {
+            width: 120px;
+            height: 55px;
+        }
+
+        .gallery-img {
+            height: 220px;
+        }
+
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .h1 {
+            font-size: 32px;
+        }
+    }
+
+    /* Small Mobile */
+    @media (max-width: 480px) {
+        .gallery-img {
+            height: 200px;
+        }
+
+        .h1 {
+            font-size: 28px;
+        }
+    }
+</style>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(231, 217, 133, 0.488);">
+        <div class="container-fluid">
+            <img src="./logo.png" class="navbar-brand " alt="logo" style="width: 150px; height:70px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">All Jewellery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Ring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Gold</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Silver</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Earrings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Daily Wear</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-warning me-3">
+                        Search Here
+                    </button>
+
+                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Login
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body fw-bold">
+                                    Email<input type="email"><br> <br>
+                                    Password <input type="password" name="pwd">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancle</button>
+                                    <button type="button" class="btn btn-primary">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav><br>
+
+    <div class="container">
+        <h1 class="text-center">Gallery</h1>
+
+        <div class="row g-3 py-4">
+
+            <!-- Image 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <img src="./img7.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-5"
+                    alt="Jewellery Image">
+            </div>
+
+            <!-- Image 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <img src="./img1.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-4 mb-3"
+                    alt="Jewellery Image">
+
+                <img src="./img3.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-4"
+                    alt="Jewellery Image">
+            </div>
+
+            <!-- Image 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <img src="./img5.png" class="img-fluid gallery-img rounded border border-warning-subtle border-4 mb-3"
+                    alt="Jewellery Image">
+
+                <img src="./img8.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-5"
+                    alt="Jewellery Image">
+            </div>
+
+            <!-- Image 4 -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <img src="./img4.avif" class="img-fluid gallery-img rounded border border-warning-subtle border-5 mb-3"
+                    alt="Jewellery Image">
+
+                <img src="./img13.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-5"
+                    alt="Jewellery Image">
+            </div>
+
+            <!-- Image 5 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="./img10.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-4 mb-3"
+                    alt="Jewellery Image">
+
+                <img src="./img11.png" class="img-fluid gallery-img rounded border border-warning-subtle border-4 mb-3"
+                    alt="Jewellery Image">
+
+                <img src="./img1.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-4"
+                    alt="Jewellery Image">
+            </div>
+
+            <!-- Image 6 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="./img14.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-4 mb-3"
+                    alt="Jewellery Image">
+
+                <img src="./img9.jpg" class="img-fluid gallery-img rounded border border-warning-subtle border-4"
+                    alt="Jewellery Image">
+            </div>
+
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <h1 class="text-center">FAQ - Frequently Asked Jewelry Questions:</h1>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mb-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                        style="background-color: rgba(253, 194, 18, 0.575); border: 2px solid goldenrod;">
+                        What is handmade Jewellery?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background-color: rgba(255, 217, 0, 0.196);">
+                        Hand made jewelry is jewelry that is made by hand without the use of machines molds or
+                        casting. In a hand made piece of jewelry all materials must be shaped formed and assembled.
+                        Machine powered cutters, drills, and lathes can be used as long as they are operated manually,
+                        and guided by the artisan’s hands.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mb-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                        style="background-color: rgba(253, 194, 18, 0.575); border: 2px solid goldenrod;">
+                        What keret Gold Is Best?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background-color: rgba(255, 217, 0, 0.196);">
+                        Karat is a term used to indicate gold purity. Pure gold is 24 karat. The legal standard is
+                        to stamp gold jewelry with markings such as 10KT, 14KT and 18KT. The Karat stamp indicates the
+                        purity of the metal. The number preceding the KT marking indicates how many parts out of 24 are
+                        pure gold. The alloys mixed with gold are added to control durability, color and the cost of
+                        fine jewelry.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mb-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                        style="background-color:  rgba(253, 194, 18, 0.575); border: 2px solid goldenrod;">
+                        How Do I insure Jewellery?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background-color: rgba(255, 217, 0, 0.196);">
+                        If you have valuable jewelry you will want to protect it. The most common way to do this is
+                        to insure it. Some homeowner’s policy’s have a provision to cover a portion of your jewelry. If
+                        you want full coverage you will most likely need to add a rider to your homeowners or renters
+                        policy. Some people choose to insure their jewelry separately through companies that specialize
+                        in jewelry insurance. In either event most insurance companies require that you have a detailed
+                        itemized appraisal of the items to be insured by a reputable appraiser.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mb-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                        style="background-color: rgba(253, 194, 18, 0.575); border: 2px solid goldenrod;">
+                        How Can I Store My Jewellery Safely?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background-color: rgba(255, 217, 0, 0.196);">
+                        Hand made jewelry is jewelry that is made by hand without the use of machines molds or
+                        casting. In a hand made piece of jewelry all materials must be shaped formed and assembled.
+                        Machine powered cutters, drills, and lathes can be used as long as they are operated manually,
+                        and guided by the artisan’s hands.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mb-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                        style="background-color:  rgba(253, 194, 18, 0.575); border: 2px solid goldenrod;">
+                        Can Jewellery Be Customized?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background-color: rgba(255, 217, 0, 0.196);">
+                        If you have valuable jewelry you will want to protect it. The most common way to do this is
+                        to insure it. Some homeowner’s policy’s have a provision to cover a portion of your jewelry. If
+                        you want full coverage you will most likely need to add a rider to your homeowners or renters
+                        policy.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                        style="background-color:  rgba(253, 194, 18, 0.575); border: 2px solid goldenrod;">
+                        How Can I Know if Jewellery is Genuine?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background-color: rgba(255, 217, 0, 0.196);">
+                        Karat is a term used to indicate gold purity. Pure gold is 24 karat. The legal standard is
+                        to stamp gold jewelry with markings such as 10KT, 14KT and 18KT. The Karat stamp indicates the
+                        purity of the metal. The number preceding the KT marking indicates how many parts out of 24 are
+                        pure gold. The alloys mixed with gold are added to control durability, color and the cost of
+                        fine jewelry.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
