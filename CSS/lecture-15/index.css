@@ -1,0 +1,53 @@
+.head {
+    width: 100%;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+   width: 250px;
+    background-color: rgba(224, 215, 215, 0.737);
+    color: black;
+    align-items: center;
+    border: 1px solid rgb(81, 79, 79);
+}
+
+@media (max-width:576px) {
+
+    .box {
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width:576px) and (max-width:768px) {
+
+    .box {
+
+        width: 40%;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .box {
+        width: 40%;
+    }
+}
+
+@media (min-width:992px)and(max-width:1200px) {
+    .box {
+        width: 30%;
+    }
+}
+
+@media (min-width:1200px)and(max-width:1400px) {
+    .box {
+        width: 5%;
+    }
+}

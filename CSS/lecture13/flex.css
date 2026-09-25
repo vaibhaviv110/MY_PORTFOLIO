@@ -1,0 +1,320 @@
+.main {
+    width: 100%;
+    background-color: rgb(104, 99, 99);
+    color: white;
+    padding: 10px;
+
+
+}
+
+.main h2 {
+    text-align: center;
+}
+
+.inbox {
+
+    height: 300px;
+    background: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.inbox div:nth-child(1) {
+    background-color: moccasin;
+    width: 90px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.inbox div:nth-child(2) {
+    background-color: moccasin;
+    width: 40px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.inbox div:nth-child(3) {
+    background-color: moccasin;
+    width: 220px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.inbox2 {
+
+    height: 300px;
+    background: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+
+}
+
+.inbox2 div:nth-child(1) {
+    background-color: moccasin;
+    width: 90px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.inbox2 div:nth-child(2) {
+    background-color: moccasin;
+    width: 90px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.inbox2 div:nth-child(3) {
+    background-color: moccasin;
+    width: 910px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.inbox3 {
+
+    height: 300px;
+    background: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.flex-shrink {
+    display: flex;
+    width: 100%;
+}
+
+.flex-shrink div {
+    width: 120px;
+    height: 70px;
+    border: 1px solid black;
+    background: moccasin;
+    text-align: center;
+    color: black;
+    flex-basis: 150px;
+}
+
+.flex-shrink div:nth-child(1) {
+    flex-shrink: 1.5;
+}
+
+.flex-shrink div:nth-child(2) {
+    flex-shrink: 1.5;
+
+}
+
+.flex-shrink div:nth-child(3) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(4) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(5) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(6) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(7) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(8) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(9) {
+    flex-shrink: 2.5;
+
+}
+
+.flex-shrink div:nth-child(10) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(11) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(12) {
+    flex-shrink: 1.5;
+
+}
+
+.flex-shrink div:nth-child(13) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(14) {
+    flex-shrink: 2.5;
+
+}
+
+.flex-shrink div:nth-child(15) {
+    flex-shrink: 2;
+
+}
+
+.flex-shrink div:nth-child(16) {
+    flex-shrink: 1;
+
+}
+
+.inbox4 {
+    height: 300px;
+    background: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.order {
+    display: flex;
+    width: 100%;
+}
+
+.order div {
+    width: 120px;
+    height: 70px;
+    border: 1px solid black;
+    background: moccasin;
+    text-align: center;
+    color: black;
+    flex-basis: 150px;
+
+}
+
+.order div:nth-child {
+    order: 1;
+}
+
+.inbox5 {
+    height: 300px;
+    background: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.align {
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.align div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: moccasin;
+    text-align: center;
+    color: black;
+    flex-basis: 150px;
+}
+
+.inbox6 {
+    height: 300px;
+    background: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.aligncen {
+    display: flex;
+
+}
+
+.aligncen div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: moccasin;
+    text-align: center;
+    color: black;
+    flex-basis: 150px;
+}
+
+.aligncen div:nth-child(even) {
+    align-self: center;
+}
+
+.inbox7 {
+    height: 300px;
+    background: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+
+}
+
+.stretch {
+    display: flex;
+    align-self: stretch;
+}
+
+.stretch div {
+    width: 65px;
+    height: 80px;
+    border: 1px solid black;
+    background: moccasin;
+    text-align: center;
+    color: black;
+    flex-basis: 150px;
+}
+
+.base {
+    display: flex;
+    align-self: baseline;
+}
+
+.inbox8 {
+    height: 300px;
+    background: yellow;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.base div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: moccasin;
+    text-align: center;
+    color: black;
+    flex-basis: 150px;
+}

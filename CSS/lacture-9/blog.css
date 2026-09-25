@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(223, 229, 229);
+}
+
+.header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+}
+.box{
+    display: flex;
+}
+.sidebar1{
+    border: 1px solid grey;
+    width: 150px;
+    height: 150vh;
+    margin: 15px;
+    background-color: white;
+    
+}
+.sidebar1 h2{
+    margin: 10px;
+}
+.sidebar2{
+    width: 85%;
+    
+    border: 1px solid gray;
+    margin: 15px;
+    
+}
+.sidebar2 h2{
+    margin: 10px;
+}
+.sidebar2 p{
+    margin: 10px;
+    font-size: 15px;
+}
+.sidebar2 p::first-line{
+    text-transform:uppercase
+}
+.sidebar2 p::first-letter{
+    color: red;
+    font-size: 30px;
+}
+
+.sidebar2::selection{
+    background-color: yellow;
+    color: red;
+}
+.p1 ::first-letter{
+    color: red;
+    margin: 15px;
+    text-transform: uppercase;
+}
+.sidebar2 img{
+    margin: 10px;
+    width: 250px;
+    height: 180px;
+    border: 3px solid black;
+}
+.sidebar2 hr{
+    margin: 10px;
+}
+.list :nth-child(odd){
+    background-color: rgb(169, 218, 169);
+
+}
+.list :nth-child(even){
+    background-color: lightblue;
+}
+.sidebar2 ul li:nth-child(3){
+    color: red;
+}
+
+
+    
+
+    
+
+

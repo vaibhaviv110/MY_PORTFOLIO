@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    width: 95%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.catgory {
+
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.catgory a {
+    text-decoration: none;
+    color: white;
+}
+
+.menubar {
+    display: flex;
+    gap: 55px;
+}
+
+.menubar a {
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+}
+
+.menu-btn {
+    display: none;
+    background-color: transparent;
+    color: white;
+}
+
+.menus {
+    width: 95%;
+    color: gray;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.menus a {
+    color: gray;
+    text-decoration: none;
+
+}
+
+.section-1 {
+    width: 95%;
+    background-color: rgb(57, 67, 93);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.imgside {
+    width: 45%;
+}
+
+.imgside img {
+    width: 100%;
+    height: 400px;
+}
+
+.containtside {
+    width: 50%;
+    color: white;
+}
+
+.containtside p {
+    color: gray;
+}
+
+.watchbtn {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: 2px solid blue;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+
+}
+
+.product {
+    width: 100%;
+    text-align: center;
+}
+
+.product p {
+    color: gray;
+}
+
+.shoespro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.fa-solid {
+    font-size: 30px;
+    color: blue;
+    display: block;
+}
+
+.card1 {
+    width: 300px;
+}
+
+.card1 img {
+    width: 200px;
+}
+
+.card1 h1 {
+    font-weight: bold;
+}
+
+.card1 h3 {
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+
+}
+.icon{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:992px) {
+    .header {
+        width: 100%;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+
+    }
+
+    .menus {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+         gap: 5px;
+    }
+
+    .imgside {
+        width: 100%;
+    }
+
+    .containtside {
+        width: 100%;
+
+    }
+
+    .shoespro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fa-solid {
+        display: none;
+    }
+    .footer{
+   
+    display: flex;
+    flex-direction: column;
+    }
+}

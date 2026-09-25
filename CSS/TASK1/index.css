@@ -1,0 +1,111 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(206, 204, 204);
+}
+
+.logoimg img {
+    width: 150px;
+    height: 50px;
+}
+
+.menus {
+    display: flex;
+    gap: 50px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.menubtn {
+    display: none;
+}
+
+.sec-1 {
+
+    text-align: center;
+
+}
+
+.boxcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid goldenrod;
+    padding: 10px;
+    line-height: 1;
+}
+
+.containt {
+text-align: left;
+}
+
+.startbtn {
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 5px;
+    width: 80px;
+    background: transparent;
+}
+
+.card:nth-child(even) {
+    background-color: rgb(52, 52, 130);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    border: none;
+
+    .startbtn {
+        border: none;
+        background-color: rgb(76, 116, 156);
+        color: white;
+        padding: 10px;
+        width: 90px;
+    }
+    .i{
+        color: gold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:992px) {
+    .menubtn {
+        display: block;
+    }
+
+    .menus {
+        display: none;
+    }
+    .boxcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+}
