@@ -112,8 +112,28 @@
             box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
         }
 
-        .f-icon {
-            text-decoration: none;
+        .icons {
+            transition: all 0.3s ease;
+        }
+        .icons:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(160, 175, 222, 0.896);
+        }
+
+        .sbtn {
+            transition: 0.3s;
+        }
+
+        .sbtn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px #0d6efd;
+        }
+        .box{
+            transition: 0.3s;
+        }
+        .box:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px #0d6efd;
         }
     </style>
 
@@ -276,8 +296,8 @@
     </div>
     <br><br>
     <!--Contect Us-->
-    <div class="container-fluid text-light py-5"
-        style="background: linear-gradient(135deg, #0b2554, #123f7d, #0d2d63);">
+    <div class="container-fluid text-light py-3"
+        style="background: linear-gradient(135deg, #092457, #0a2c5c, #0e2a5c);">
 
         <!-- Heading -->
         <div class="text-center mb-5">
@@ -329,7 +349,7 @@
 
                 <!-- RIGHT SIDE FORM -->
                 <div class="col-12 col-lg-6">
-                    <div class="p-4 p-md-5" style="border:1px solid #0d6efd;
+                    <div class="p-4 p-md-5 box" style="border:1px solid #0d6efd;
                            border-radius:25px;
                            background:rgba(255,255,255,0.05);
                            box-shadow:0 15px 50px rgba(0,0,0,0.25);">
@@ -408,10 +428,10 @@
                         </div>
 
                         <!-- Send Button -->
-                        <button type="submit" class="btn w-100 text-light fw-bold py-3" style="border:none;
+                        <button type="submit" class="sbtn w-100 text-light fw-bold py-3" style="border:none;
                                border-radius:12px;
                                background:linear-gradient(90deg,#087cff,#613cff);">
-                            <i class="fa-solid fa-paper-plane me-2"></i>
+                            <i class="fa-solid fa-paper-plane me-2 "></i>
                             Send Message
                             <i class="fa-solid fa-arrow-right-long ms-2"></i>
                         </button>
@@ -426,17 +446,17 @@
                         Follow Me On
                     </span>
                 </div>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="#" class="text-light fs-4">
+                <div class="d-flex justify-content-center gap-4 ">
+                    <a href="https://github.com/vaibhaviv110" class="text-light fs-4 icons ">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="#" class="text-light fs-4">
+                    <a href="https://www.linkedin.com/in/vaibhavi-v-19605a393/?isSelfProfile=true" class="text-light fs-4 icons">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                    <a href="#" class="text-light fs-4">
+                    <a href="https://x.com/home" class="text-light fs-4 icons">
                         <i class="fa-brands fa-square-x-twitter"></i>
                     </a>
-                    <a href="#" class="text-light fs-4">
+                    <a href="#" class="text-light fs-4 icons">
                         <i class="fa-brands fa-square-instagram"></i>
                     </a>
                 </div>
@@ -446,7 +466,7 @@
                 </p>
                 <p>
                     Designed And Developed By
-                    <span class="text-primary fw-bold">
+                    <span class="text-primary fw-bold ">
                         Vaibhavi Vaghasiya
                     </span>
                 </p>
