@@ -111,8 +111,9 @@
             transform: translateY(-8px);
             box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
         }
-        .f-icon{
-            text-decoration:none;
+
+        .f-icon {
+            text-decoration: none;
         }
     </style>
 
@@ -274,74 +275,184 @@
         </div>
     </div>
     <br><br>
-    <div class="container-fluid text-center p-4 text-light " style="background-color:#12519f74;">
-        <h1> <span class="text-primary fw-bold"> Get</span> In Touch</h1> <br>
+    <!--Contect Us-->
+    <div class="container-fluid text-light py-5"
+        style="background: linear-gradient(135deg, #0b2554, #123f7d, #0d2d63);">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+
+            <h1 class="display-5 fw-bold">
+                <span class="text-primary">Get</span> In Touch
+            </h1>
+
+            <p class="text-light opacity-75">
+                I'm always open to new opportunities, collaborations, or just a friendly
+                chat.
+                <br>
+                Feel free to reach out — I'd love to hear from you!
+            </p>
+
+        </div>
+
+
         <div class="container">
-            <div class="row d-flex align-items-center justify-content-center g-5">
-                <div class="col-12 col-md-6 col-lg-6 ">
-
-                    <h2> Let's Work <span class="text-primary">Togather</span></h2>
-                    <p>I’m a BCA student and aspiring Full Stack Developer, passionate about creating responsive and
-                        user-friendly websites.</p>
-                    <h4>Let’s connect and build something amazing together.</h4>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div style="height: 450px; width:420px; border-radius:30px;background-color:#2653969d">
-                        <input type="text" class="form" placeholder="Enter Your Name *" style="border:none; border-radius: 10px;   background-color: #7da5e2f7;padding:10px;
-                       color: white; width: 350px;   height: 45px; margin-top: 30px;">
-                        <input type="text" class="form" placeholder="Enter Your Email *" style="border:none; border-radius: 10px;   background-color: #7da5e2f7;padding:10px;
-                       color: white; width: 350px;   height: 45px; margin-top: 30px;">
-
-
-                        <textarea name="message" placeholder="Enter Your Message *" style="border:none; border-radius: 10px;   background-color: #7da5e2f7;padding:10px;
-                       color: white; width: 350px;   height: 100px; margin-top: 30px;">
-                       </textarea> <br><br>
-
-                       <button type="button" class="btn btn-outline-primary ">   Submit   </button>
-
+            <div class="row align-items-center g-5">
+                <!-- LEFT SIDE -->
+                <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                        <span class="px-3 py-2" style="border:1px solid #0d6efd;
+                               border-radius:20px;
+                               color:#4da3ff;">
+                            <i class="fa-solid fa-comments"></i>
+                            &nbsp; Let's Work Together
+                        </span>
                     </div>
-
+                    <h2 class="fw-bold display-6 mt-4">
+                        Let's Connect and
+                        <br>
+                        Build Something
+                        <span class="text-primary">
+                            Amazing Together.
+                        </span>
+                    </h2>
+                    <p class="mt-4 text-light opacity-75" style="line-height:1.8;">
+                        I'm a BCA student and aspiring Full Stack Developer,
+                        passionate about creating responsive and user-friendly
+                        websites. Whether you have a project, a job opportunity,
+                        or just want to say hello — I'm all ears!
+                    </p>
+                    <h5 class="fw-bold mt-4">
+                        Let's connect and build something amazing together.
+                    </h5>
                 </div>
 
+                <!-- RIGHT SIDE FORM -->
+                <div class="col-12 col-lg-6">
+                    <div class="p-4 p-md-5" style="border:1px solid #0d6efd;
+                           border-radius:25px;
+                           background:rgba(255,255,255,0.05);
+                           box-shadow:0 15px 50px rgba(0,0,0,0.25);">
+
+                        <!-- Form Heading -->
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="d-flex align-items-center justify-content-center" style="width:55px;
+                                   height:55px;
+                                   border-radius:50%;
+                                   background:linear-gradient(135deg,#087cff,#713cff);">
+                                <i class="fa-solid fa-envelope fs-4"></i>
+                            </div>
+                            <div>
+                                <h3 class="fw-bold mb-1">
+                                    Send Me a Message
+                                </h3>
+                                <p class="small mb-0 text-light opacity-75">
+                                    Fill out the form below and I'll get back
+                                    to you as soon as possible.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Name -->
+                        <div class="mb-3 position-relative">
+                            <i class="fa-solid fa-user position-absolute" style="left:18px;
+                                   top:16px;
+                                   color:#8dbdff;">
+                            </i>
+                            <input type="text" class="form-control text-light" placeholder="Enter Your Name *" style="height:52px;
+                                   padding-left:48px;
+                                   border-radius:12px;
+                                   border:1px solid #347ee8;
+                                   background:rgba(255,255,255,0.05);">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3 position-relative">
+                            <i class="fa-solid fa-envelope position-absolute" style="left:18px;
+                                   top:16px;
+                                   color:#8dbdff;">
+                            </i>
+                            <input type="email" class="form-control text-light" placeholder="Enter Your Email *" style="height:52px;
+                                   padding-left:48px;
+                                   border-radius:12px;
+                                   border:1px solid #347ee8;
+                                   background:rgba(255,255,255,0.05);">
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-3 position-relative">
+                            <i class="fa-solid fa-phone position-absolute" style="left:18px;
+                                   top:16px;
+                                   color:#8dbdff;">
+                            </i>
+                            <input type="tel" class="form-control text-light" placeholder="Enter Your Phone (Optional)"
+                                style="height:52px;
+                                   padding-left:48px;
+                                   border-radius:12px;
+                                   border:1px solid #347ee8;
+                                   background:rgba(255,255,255,0.05);">
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-4 position-relative">
+                            <i class="fa-regular fa-message position-absolute" style="left:18px;
+                                   top:18px;
+                                   color:#8dbdff;">
+                            </i>
+                            <textarea class="form-control text-light" placeholder="Your Message *" style="height:140px;
+                                   padding-left:48px;
+                                   padding-top:15px;
+                                   border-radius:12px;
+                                   border:1px solid #347ee8;
+                                   background:rgba(255,255,255,0.05);"></textarea>
+                        </div>
+
+                        <!-- Send Button -->
+                        <button type="submit" class="btn w-100 text-light fw-bold py-3" style="border:none;
+                               border-radius:12px;
+                               background:linear-gradient(90deg,#087cff,#613cff);">
+                            <i class="fa-solid fa-paper-plane me-2"></i>
+                            Send Message
+                            <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
 
+            <!-- Bottom Text -->
+            <div class="text-center mt-5">
+                <div class="mb-3">
+                    <span class="text-light opacity-75">
+                        Follow Me On
+                    </span>
+                </div>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#" class="text-light fs-4">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
+
+                <p class="mt-3 mb-0 text-light opacity-75">
+                    Let's create something great together! ♡
+                </p>
+                <p>
+                    Designed And Developed By
+                    <span class="text-primary fw-bold">
+                        Vaibhavi Vaghasiya
+                    </span>
+                </p>
+            </div>
         </div>
-
     </div>
-
-
-    </div>
-
-    </div>
-
-    <footer class="text-center  text-light p-3" style="background-color: #44648a38;" style="text-decoration: none;">
-
-
-        <p>
-            Designed And Developed By<span class="text-primary fw-bold"> Vaibhavi Vaghasiya</span>
-        </p>
-        <div class=" text-center text-light f-icon" style="text-decoration: none; font-size:30px;">
-            <a href="https://github.com/vaibhaviv110" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/vaibhavi-v-19605a393/?isSelfProfile=true" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-
-            <a href="https://x.com/home" target="_blank">
-                <i class="fa-brands fa-square-x-twitter"></i>
-            </a>
-            <a href="mailto:vaibhavivaghasiya110@gmail.com" target="_blank">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="https://x.com/home" target="_blank">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-        </div>
-
-    </footer>
-
 </body>
 
 </html>
