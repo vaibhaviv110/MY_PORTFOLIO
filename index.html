@@ -115,7 +115,8 @@
         .icons {
             transition: all 0.3s ease;
         }
-        .icons:hover{
+
+        .icons:hover {
             transform: translateY(-8px);
             box-shadow: 0 0 20px rgba(160, 175, 222, 0.896);
         }
@@ -128,10 +129,12 @@
             transform: translateY(-5px);
             box-shadow: 0 0 15px #0d6efd;
         }
-        .box{
+
+        .box {
             transition: 0.3s;
         }
-        .box:hover{
+
+        .box:hover {
             transform: translateY(-5px);
             box-shadow: 0 0 15px #0d6efd;
         }
@@ -141,7 +144,7 @@
 
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg text-light">
+        <nav class="navbar navbar-expand-lg text-light  sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" href="#"><span class="text-primary fw-bold">V</span>aibhavi</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -152,28 +155,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                            <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                     <div class="d-flex gap-4">
 
-                        <button type="button" class="btn btn-outline-primary">Contact Me</button>
+                        <button type="button" class="btn btn-outline-primary" href="#contact">Contact Me</button>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
     <br><br>
-    <div class="container">
+    <div class="container" id="home">
         <div class="row d-flex align-items-center">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <span class="fw-bold">👋Hi, I am </span> <br>
@@ -205,13 +208,193 @@
             </div>
             <br>
             <div class="col-lg-6 col-md-6 col-sm-12 ">
-                <img src="./images/profile.png" alt="Vaibhavi" class="img img-fluid rounded-circle"
-                    style="width: 400px; height:400px;">
+                <img src="./images/profile.png" alt="Vaibhavi" class="img img-fluid rounded-4 mt-4"
+                    style="width: 350px; height:350px;">
             </div>
         </div>
     </div>
     <br><br>
+
+
+
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+   <section id="about" class="py-5" style="background:linear-gradient(135deg,#162443,#0d2d63);">
+
     <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">
+                <span class="text-primary">About</span> Me
+            </h1>
+
+            <p class="text-light opacity-75">
+                Get to know more about me, my education and my skills.
+            </p>
+        </div>
+
+
+        <div class="row align-items-center g-5">
+
+            <!-- Simple Card -->
+            <div class="col-12 col-lg-5">
+
+                <div class="card border-0 shadow-lg mx-auto"
+                    style="
+                        max-width:380px;
+                        background:#0b1f3d;
+                        border-radius:20px;
+                        border:1px solid rgba(13,110,253,0.5) !important;
+                    ">
+
+                    <div class="card-body text-center p-4 p-md-5">
+
+                        <div class="mb-4">
+                            <i class="fa-solid fa-laptop-code text-primary"
+                                style="font-size:70px;"></i>
+                        </div>
+
+                        <h3 class="text-light fw-bold">
+                            Full Stack Developer
+                        </h3>
+
+                        <p class="text-light opacity-75 mt-3">
+                            BCA Student & Aspiring Full Stack Developer
+                        </p>
+
+                        
+                        <div class="mt-4">
+                            <i class="fa-solid fa-code text-primary me-2"></i>
+                            <span class="text-light opacity-75">
+                                Passionate about Web Development
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- About Content -->
+            <div class="col-12 col-lg-7">
+
+                <h4 class="text-primary fw-bold">
+                    Hello, I'm Vaibhavi Vaghasiya
+                </h4>
+
+                <h2 class="fw-bold mt-3">
+                    BCA Student & Aspiring
+                    <span class="text-primary">
+                        Full Stack Developer
+                    </span>
+                </h2>
+
+                <p class="text-light opacity-75 mt-3" style="line-height:1.8;">
+
+                    I am a BCA student and an aspiring Full Stack Developer
+                    passionate about creating modern, responsive and
+                    user-friendly websites.
+
+                </p>
+
+                <p class="text-light opacity-75" style="line-height:1.8;">
+
+                    I enjoy learning new technologies and applying my
+                    knowledge through practical projects. My goal is to
+                    become a skilled Full Stack Developer and build useful
+                    and professional web applications.
+
+                </p>
+
+
+                <!-- Information -->
+                <div class="mt-4 text-light">
+
+                    <p>
+                        <i class="fa-solid fa-graduation-cap text-primary me-2"></i>
+                        <strong>Education:</strong>
+                        Bachelor of Computer Applications (BCA)
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-code text-primary me-2"></i>
+                        <strong>Role:</strong>
+                        Aspiring Full Stack Developer
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-laptop-code text-primary me-2"></i>
+                        <strong>Focus:</strong>
+                        Web Development & UI Design
+                    </p>
+
+                </div>
+
+
+                <!-- Skills -->
+                <h5 class="fw-bold text-light mt-4">
+                    My Skills
+                </h5>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+
+                    <span class="px-3 py-2 rounded-pill text-light"
+                        style="border:1px solid #0d6efd;">
+                        HTML
+                    </span>
+
+                    <span class="px-3 py-2 rounded-pill text-light"
+                        style="border:1px solid #0d6efd;">
+                        CSS
+                    </span>
+
+                    <span class="px-3 py-2 rounded-pill text-light"
+                        style="border:1px solid #0d6efd;">
+                        Bootstrap
+                    </span>
+
+                    <span class="px-3 py-2 rounded-pill text-light"
+                        style="border:1px solid #0d6efd;">
+                        C
+                    </span>
+
+                    <span class="px-3 py-2 rounded-pill text-light"
+                        style="border:1px solid #0d6efd;">
+                        C++
+                    </span>
+
+                    <span class="px-3 py-2 rounded-pill text-light"
+                        style="border:1px solid #0d6efd;">
+                        JavaScript
+                    </span>
+
+                </div>
+
+
+                <!-- Button -->
+                <a href="./resume.pdf"
+                    target="_blank"
+                    class="btn btn-primary mt-4 px-4 py-2">
+
+                    <i class="fa-solid fa-download me-2"></i>
+                    Download Resume
+
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+    <br><br>
+
+
+    <!-- My Projects -->
+
+    <div class="container" id="skills">
         <div>
             <h1 class="text-center fw-bold">
                 MY All Projects
@@ -222,13 +405,13 @@
             <div class="col-12 col-md-6 col-lg-4 mt-4">
 
                 <div class="card p-2">
-                    <img src="./images/html.jpg" class="card-img-top" alt="...">
+                    <img src="./images/html.jpg" class="card-img-top" alt="html img">
                     <div class="card-body">
                         <h5 class="card-title">My All HTML Projects</h5>
                         <p class="card-text">Explore my HTML projects showcasing my practice in web structure, forms,
                             tables, layouts, and
                             responsive webpage development.</p>
-                        <a href="./HTML/htmlprojects.html" class="btn btn-primary">View All Projects</a>
+                        <a href="./HTML/htmlprojects.html" target="_blank" class="btn btn-primary">View All Projects</a>
                     </div>
                 </div>
 
@@ -237,13 +420,13 @@
             <div class="col-12 col-md-6 col-lg-4 mt-4">
 
                 <div class="card p-2">
-                    <img src="./images/css.jpg" class="card-img-top" alt="...">
+                    <img src="./images/css.jpg" class="card-img-top" alt="CSS img">
                     <div class="card-body">
                         <h5 class="card-title">My All CSS Projects</h5>
                         <p class="card-text">Creative web designs using CSS, animations, hover effects and responsive
                             layouts &
                             responsive webpage development.</p>
-                        <a href="./CSS/cssprojects.html" class="btn btn-primary">View All Projects</a>
+                        <a href="./CSS/cssprojects.html" target="_blank" class="btn btn-primary">View All Projects</a>
                     </div>
                 </div>
 
@@ -252,14 +435,15 @@
             <div class="col-12 col-md-6 col-lg-4 mt-4">
 
                 <div class="card p-2">
-                    <img src="./images/bootstrap.jpg" class="card-img-top" alt="...">
+                    <img src="./images/bootstrap.jpg" class="card-img-top" alt="Bootstrap">
                     <div class="card-body">
                         <h5 class="card-title">My All Bootstrap Projects</h5>
                         <p class="card-text">Responsive websites and UI components created using Bootstrap.
                             Bootstrap created grid system, components, utilities, cards, navigation bars, and modern UI
                             layouts.
                         </p>
-                        <a href="./Bootstrap/Bootstrapprojects.html" class="btn btn-primary">View All Projects</a>
+                        <a href="./Bootstrap/Bootstrapprojects.html" target="_blank" class="btn btn-primary">View All
+                            Projects</a>
                     </div>
                 </div>
 
@@ -268,12 +452,13 @@
             <div class="col-12 col-md-6 col-lg-4 mt-4">
 
                 <div class="card p-2">
-                    <img src="./images/c lang.jpg" class="card-img-top" alt="...">
+                    <img src="./images/c lang.jpg" class="card-img-top" alt="C language">
                     <div class="card-body">
                         <h5 class="card-title">My All C Language Projects</h5>
                         <p class="card-text">Practice programs using C language, including arrays, loops, functions,
                             pointers, patterns, and basic problem-solving.</p>
-                        <a href="https://vaibhaviv110.github.io/PROJECTS/" class="btn btn-primary">View All Projects</a>
+                        <a href="https://vaibhaviv110.github.io/PROJECTS/" target="_blank" class="btn btn-primary">View
+                            All Projects</a>
                     </div>
                 </div>
 
@@ -282,12 +467,27 @@
             <div class="col-12 col-md-6 col-lg-4 mt-4">
 
                 <div class="card p-2">
-                    <img src="./images/projects.jpg" class="card-img-top" alt="..." style="height:225px">
+                    <img src="./images/projects.jpg" class="card-img-top" alt="projet img" style="height:225px">
                     <div class="card-body">
                         <h5 class="card-title">Projects</h5>
                         <p class="card-text">After practicing various programming concepts,i have created several
                             projects. I built them using different technologies and frameworks.</p>
-                        <a href="./Projects/indexpro.html" class="btn btn-primary">View All Projects</a>
+                        <a href="./Projects/indexpro.html" class="btn btn-primary" target="_blank">View All Projects</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Videos part -->
+            <div class="col-12 col-md-6 col-lg-4 mt-4">
+
+                <div class="card p-2">
+                    <img src="./images/recordings.png" class="card-img-top" alt="video recording." style="height:225px">
+                    <div class="card-body">
+                        <h5 class="card-title">C Language Video Recordings</h5>
+                        <p class="card-text">Explore my C programming video recordings covering arrays, loops,
+                            functions, pointers, patterns, strings, and basic problem-solving concepts.</p>
+                        <a href="https://vaibhaviv110.github.io/Improve/" class="btn btn-primary" target="_blank">View
+                            All Videos Recording 🎥</a>
                     </div>
                 </div>
 
@@ -296,7 +496,7 @@
     </div>
     <br><br>
     <!--Contect Us-->
-    <div class="container-fluid text-light py-3"
+    <div id="contact" class="container-fluid text-light py-3"
         style="background: linear-gradient(135deg, #092457, #0a2c5c, #0e2a5c);">
 
         <!-- Heading -->
@@ -450,7 +650,8 @@
                     <a href="https://github.com/vaibhaviv110" class="text-light fs-4 icons ">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/vaibhavi-v-19605a393/?isSelfProfile=true" class="text-light fs-4 icons">
+                    <a href="https://www.linkedin.com/in/vaibhavi-v-19605a393/?isSelfProfile=true"
+                        class="text-light fs-4 icons">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="https://x.com/home" class="text-light fs-4 icons">
