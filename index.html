@@ -23,6 +23,16 @@
         body {
             background-color: rgb(22, 36, 67);
             color: white;
+            padding:0;
+            margin:0;
+        }
+
+        .fixed-header {
+            position: fixed;
+            padding:0px;
+            width: 100%;
+            z-index: 9999;
+            background: #0b2554;
         }
 
         .navbar-brand,
@@ -46,16 +56,8 @@
             color: #0d6efd !important;
         }
 
-        .card {
-            background-color: #1b315f;
-            color: white;
-            border: 1px solid #35558c;
-        }
 
-        .card-title,
-        .card-text {
-            color: white;
-        }
+
 
         .navbar-toggler {
             background-color: white;
@@ -104,12 +106,13 @@
             border: 2px solid #0d6efd;
             border-radius: 10px;
             transition: all 0.3s ease;
+            color: white;
         }
 
         .card:hover {
             border-color: #00c6ff;
             transform: translateY(-8px);
-            box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+            box-shadow: 0 0 20px rgba(98, 192, 250, 0.4);
         }
 
         .icons {
@@ -143,40 +146,49 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg text-light  sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#"><span class="text-primary fw-bold">V</span>aibhavi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex gap-4">
+    <header class="fixed-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg text-light sticky-top">
+                <div class="container-fluid">
 
-                        <button type="button" class="btn btn-outline-primary" href="#contact">Contact Me</button>
+                    <a class="navbar-brand fw-bold" href="#">
+                        <span class="text-primary fw-bold">V</span>aibhavi
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                        <a href="./vaibhavi vaghasiya.pdf" target="_blank"
+                            class="btn btn-primary mt-4 px-4 py-2 rounded-pill fw-bold">
+                            <i class="fa-solid fa-download me-2"></i>
+                            Download Resume
+                        </a>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
+    </header>
     <br><br>
-    <div class="container" id="home">
+    <div class="container p-5 align-items-center" id="home">
         <div class="row d-flex align-items-center">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <span class="fw-bold">👋Hi, I am </span> <br>
@@ -184,9 +196,11 @@
                 <span class="fw-bold">And I'm </span>
                 <h4>WEB DESIGNER & FRONTEND DEVELOPER</h4>
 
-                <h5>I create modern,responsive and professional websites
+                <p class="text-light fs-5">
+                    I create modern,responsive and professional websites
                     that help businesses grow and build a strong online presence.
-                </h5>
+                    I'm always excited to connect, share ideas, and create modern and responsive web experiences.
+                </p>
                 <br>
                 <div class="social-icons">
                     <a href="https://github.com/vaibhaviv110" target="_blank">
@@ -221,174 +235,165 @@
 
     <!-- ================= ABOUT SECTION ================= -->
 
-   <section id="about" class="py-5" style="background:linear-gradient(135deg,#162443,#0d2d63);">
+    <section id="about" class="py-3" style="background:linear-gradient(135deg,#162443,#0d2d63);">
 
-    <div class="container">
+        <div class="container">
 
-        <!-- Heading -->
-        <div class="text-center mb-5">
-            <h1 class="fw-bold">
-                <span class="text-primary">About</span> Me
-            </h1>
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">
+                    <span class="text-primary">About</span> Me
+                </h1>
 
-            <p class="text-light opacity-75">
-                Get to know more about me, my education and my skills.
-            </p>
-        </div>
+                <p class="text-light opacity-75">
+                    Get to know more about me, my education and my skills.
+                </p>
+            </div>
 
+            <div class="row align-items-center g-5 ">
 
-        <div class="row align-items-center g-5">
+                <!-- Simple Card -->
+                <div class="col-12 col-lg-5">
 
-            <!-- Simple Card -->
-            <div class="col-12 col-lg-5">
-
-                <div class="card border-0 shadow-lg mx-auto"
-                    style="
+                    <div class="card border-0 shadow-lg mx-auto " style="
                         max-width:380px;
                         background:#0b1f3d;
                         border-radius:20px;
+                        box-shadow: 0 15px 50px rgba(123, 198, 245, 0.4);
                         border:1px solid rgba(13,110,253,0.5) !important;
                     ">
 
-                    <div class="card-body text-center p-4 p-md-5">
+                        <div class="card-body text-center p-4 p-md-5">
 
-                        <div class="mb-4">
-                            <i class="fa-solid fa-laptop-code text-primary"
-                                style="font-size:70px;"></i>
-                        </div>
+                            <div class="mb-4">
+                                <i class="fa-solid fa-laptop-code text-primary" style="font-size:70px;"></i>
+                            </div>
 
-                        <h3 class="text-light fw-bold">
-                            Full Stack Developer
-                        </h3>
+                            <h3 class="text-light fw-bold">
+                                Full Stack Developer
+                            </h3>
 
-                        <p class="text-light opacity-75 mt-3">
-                            BCA Student & Aspiring Full Stack Developer
-                        </p>
+                            <p class="text-light  mt-3 text-primary opacity-75 fw-bold">
+                                BCA Student & Aspiring Full Stack Developer
+                            </p>
 
-                        
-                        <div class="mt-4">
-                            <i class="fa-solid fa-code text-primary me-2"></i>
-                            <span class="text-light opacity-75">
-                                Passionate about Web Development
-                            </span>
+
+                            <div class="mt-4">
+                                <i class="fa-solid fa-code text-primary me-2"></i>
+                                <span class="text-light opacity-75">
+                                    Passionate about Web Development
+                                </span>
+                            </div>
                         </div>
                     </div>
+
+                </div>
+
+
+                <!-- About Content -->
+                <div class="col-12 col-lg-7">
+
+                    <h4 class="text-primary fw-bold">
+                        Hello, I'm Vaibhavi Vaghasiya
+                    </h4>
+
+                    <p class="text-light opacity-75" style="line-height:1.8;">
+
+                        I enjoy learning new technologies and applying my
+                        knowledge through practical projects. My goal is to
+                        become a skilled Full Stack Developer and build useful
+                        and professional web applications.
+
+                    </p>
+
+                    <!-- Information -->
+                    <div class="mt-4 text-light">
+
+                        <p>
+                            <i class="fa-solid fa-graduation-cap text-primary me-2"></i>
+                            <strong>Education:</strong>
+                            Bachelor of Computer Applications (BCA)
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-code text-primary me-2"></i>
+                            <strong>Role:</strong>
+                            Aspiring Full Stack Developer
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-laptop-code text-primary me-2"></i>
+                            <strong>Focus:</strong>
+                            Web Development & UI Design
+                        </p>
+
+                    </div>
+
+
+                    <!-- Skills -->
+                    <h5 class="fw-bold text-light mt-4">
+                        My Skills
+                    </h5>
+
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+
+                        <span class="px-3 py-2 rounded-pill text-light sbtn" style="border:1px solid #0d6efd;">
+                            HTML
+                        </span>
+
+                        <span class="px-3 py-2 rounded-pill text-light sbtn" style="border:1px solid #0d6efd;">
+                            CSS
+                        </span>
+
+                        <span class="px-3 py-2 rounded-pill text-light sbtn" style="border:1px solid #0d6efd;">
+                            Bootstrap
+                        </span>
+
+                        <span class="px-3 py-2 rounded-pill text-light sbtn" style="border:1px solid #0d6efd;">
+                            C
+                        </span>
+
+                        <span class="px-3 py-2 rounded-pill text-light sbtn" style="border:1px solid #0d6efd;">
+                            C++
+                        </span>
+
+                        <span class="px-3 py-2 rounded-pill text-light sbtn sbtn" style="border:1px solid #0d6efd;">
+                            JavaScript
+                        </span>
+
+                    </div>
+                    <h4 class="text-white mt-4">
+
+                        <i class="fa-solid fa-bullseye me-2" style="color:#168cff;"></i>
+
+                        Career Goal
+
+                    </h4>
+
+
+                    <p style="color:#b8c7d9;">
+
+                        My career goal is to become a professional
+                        Full Stack Developer with strong skills in
+                        frontend and backend development. I aim to
+                        build responsive, secure and user-friendly
+                        web applications while continuously learning
+                        new technologies.
+
+                    </p>
+
+
+                    <!-- Button -->
+                    <div class="d-flex gap-4">
+
+                        <button type="button" class="btn btn-primary" href="#contact">Contact Me</button>
+                    </div>
+
                 </div>
 
             </div>
-
-
-            <!-- About Content -->
-            <div class="col-12 col-lg-7">
-
-                <h4 class="text-primary fw-bold">
-                    Hello, I'm Vaibhavi Vaghasiya
-                </h4>
-
-                <h2 class="fw-bold mt-3">
-                    BCA Student & Aspiring
-                    <span class="text-primary">
-                        Full Stack Developer
-                    </span>
-                </h2>
-
-                <p class="text-light opacity-75 mt-3" style="line-height:1.8;">
-
-                    I am a BCA student and an aspiring Full Stack Developer
-                    passionate about creating modern, responsive and
-                    user-friendly websites.
-
-                </p>
-
-                <p class="text-light opacity-75" style="line-height:1.8;">
-
-                    I enjoy learning new technologies and applying my
-                    knowledge through practical projects. My goal is to
-                    become a skilled Full Stack Developer and build useful
-                    and professional web applications.
-
-                </p>
-
-
-                <!-- Information -->
-                <div class="mt-4 text-light">
-
-                    <p>
-                        <i class="fa-solid fa-graduation-cap text-primary me-2"></i>
-                        <strong>Education:</strong>
-                        Bachelor of Computer Applications (BCA)
-                    </p>
-
-                    <p>
-                        <i class="fa-solid fa-code text-primary me-2"></i>
-                        <strong>Role:</strong>
-                        Aspiring Full Stack Developer
-                    </p>
-
-                    <p>
-                        <i class="fa-solid fa-laptop-code text-primary me-2"></i>
-                        <strong>Focus:</strong>
-                        Web Development & UI Design
-                    </p>
-
-                </div>
-
-
-                <!-- Skills -->
-                <h5 class="fw-bold text-light mt-4">
-                    My Skills
-                </h5>
-
-                <div class="d-flex flex-wrap gap-2 mt-3">
-
-                    <span class="px-3 py-2 rounded-pill text-light"
-                        style="border:1px solid #0d6efd;">
-                        HTML
-                    </span>
-
-                    <span class="px-3 py-2 rounded-pill text-light"
-                        style="border:1px solid #0d6efd;">
-                        CSS
-                    </span>
-
-                    <span class="px-3 py-2 rounded-pill text-light"
-                        style="border:1px solid #0d6efd;">
-                        Bootstrap
-                    </span>
-
-                    <span class="px-3 py-2 rounded-pill text-light"
-                        style="border:1px solid #0d6efd;">
-                        C
-                    </span>
-
-                    <span class="px-3 py-2 rounded-pill text-light"
-                        style="border:1px solid #0d6efd;">
-                        C++
-                    </span>
-
-                    <span class="px-3 py-2 rounded-pill text-light"
-                        style="border:1px solid #0d6efd;">
-                        JavaScript
-                    </span>
-
-                </div>
-
-
-                <!-- Button -->
-                <a href="./resume.pdf"
-                    target="_blank"
-                    class="btn btn-primary mt-4 px-4 py-2">
-
-                    <i class="fa-solid fa-download me-2"></i>
-                    Download Resume
-
-                </a>
-
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
     <br><br>
 
 
@@ -657,7 +662,7 @@
                     <a href="https://x.com/home" class="text-light fs-4 icons">
                         <i class="fa-brands fa-square-x-twitter"></i>
                     </a>
-                    <a href="#" class="text-light fs-4 icons">
+                    <a href="https://www.instagram.com/?hl=en" class="text-light fs-4 icons">
                         <i class="fa-brands fa-square-instagram"></i>
                     </a>
                 </div>
