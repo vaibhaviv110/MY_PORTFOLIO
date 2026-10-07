@@ -16,6 +16,7 @@
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
         * {
@@ -27,32 +28,88 @@
         body {
             font-family: Arial, sans-serif;
             color: #ffffff;
-            background-color: rgb(22, 36, 67);
+            background-color: rgba(17, 32, 62, 0.908);
         }
 
 
         /*  HEADER  */
 
         header {
-            background: linear-gradient(135deg, #052449, #183b64, #599ae9);
+            background: linear-gradient(135deg, #1e426d, #183b64, #4375b1);
             color: white;
             text-align: center;
             padding: 55px 20px;
         }
 
-
-        .card {
+        .project-card {
             background: transparent;
-            border: 2px solid #0d6efd;
-            border-radius: 10px;
+            border: 1px solid white;
+            border-radius: 18px;
+            padding: 35px 25px;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
-            height:200px;
+            text-align: center;
+            color: white;
         }
 
-        .card:hover {
+        .project-card:hover {
             border-color: #00c6ff;
             transform: translateY(-8px);
             box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+        }
+
+        /* ICON */
+
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef4ff;
+            color: #0969da;
+            border-radius: 50%;
+            font-size: 32px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover .project-icon {
+            background: #0969da;
+            color: white;
+        }
+
+        .project-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+
+        }
+
+        .project-card p {
+            color: #666;
+            line-height: 1.6;
+            min-height: 75px;
+        }
+
+        /* BUTTON */
+
+        .project-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #498ada;
+            color: white;
+            padding: 11px 22px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background: #0969da;
+            color: white;
         }
 
         /*  MOBILE  */
@@ -83,7 +140,7 @@
     <!-- ===== HEADER ===== -->
 
     <header>
-        <div class="icon">
+        <div class="project-icon">
             <i class="bi bi-arrow-repeat"></i>
         </div>
         <h1> PROJECTS</h1>
@@ -101,126 +158,159 @@
         <div class="row p-5">
 
             <!-- Card 1 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header"></div>
-
-
-                    <div class="card-body">
-                        <h5 class="card-title"> Web site</h5>
-                        <p class="card-text"> i built a simple web site</p>
-                        <a href="./Coffee/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>
+                        Simple WebSite 
+                    </h2>
+                    <h3>
+                         i built a simple web site
+                    </h3>
+                    <a href="./Coffee/index.html" class="project-btn">
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
-            </div>
 
+            </div>
             <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header"></div>
-
-                    <div class="card-body">
-                        <h5 class="card-title"> Red & White Institued</h5>
-                        <p class="card-text"> i built a simple  Education web site</p>
-                        <a href="./Exam/exam.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
                     </div>
+                    <h2>
+                        Red & White Institued
+                    </h2>
+                    <h3>
+                         i built a simple Education web site
+                    </h3>
+                    <a href="./Exam/exam.html" class="project-btn">
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
-            </div>
 
+            </div>
             <!-- Card 3 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header"></div>
-
-                    <div class="card-body">
-                        <h5 class="card-title"> Simple Layout</h5>
-                        <p class="card-text"> i built a simple layout Responsive</p>
-                        <a href="./finalprectical/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-bars-progress"></i>
                     </div>
+                    <h2>
+                        Simple Layout 
+                    </h2>
+                    <h3>
+                         i built a simple layout Responsive
+                    </h3>
+                    <a href="./finalprectical/index.html" class="project-btn">
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
+
             </div>
-
             <!-- Card 4 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header"></div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Netflix Clone</h5>
-                        <p class="card-text">A simple Netflix clone built with HTML and CSS</p>
-                        <a href="./netflix/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
                     </div>
+                    <h2>
+                        Netflix Clone
+                    </h2>
+                    <h3>
+                         A simple Netflix clone built with HTML and CSS
+                    </h3>
+                    <a href="./netflix/index.html" class="project-btn">
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
+
             </div>
             <!-- Card 5 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header"></div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Task Project</h5>
-                        <p class="card-text">A simple task management project</p>
-                        <a href="./TASK/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                       <i class="fa-solid fa-face-smile"></i>
                     </div>
+                    <h2>
+                        Task Project
+                    </h2>
+                    <h3>
+                         A simple task management project
+                    </h3>
+                    <a href="./TASK/index.html" class="project-btn">
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
+
             </div>
             <!-- Card 6 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header"></div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Clothing Store</h5>
-                        <p class="card-text">A simple clothing store website built with HTML and CSS.</p>
-                        <a href="./TASK2/task2.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                       <i class="fa-solid fa-shirt"></i>
                     </div>
+                    <h2>
+                       Clothing Store
+                    </h2>
+                    <h3>
+                        A simple clothing store website built with HTML and CSS.
+                    </h3>
+                    <a href="./TASK2/task2.html" class="project-btn">
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
+
             </div>
             <!-- Card 7 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header"></div>
-
-                    <div class="card-body">
-                        <h5 class="card-title"> E-Commerce website</h5>
-                        <p class="card-text">A simple e-commerce website built with HTML and CSS& .</p>
-                        <a href="./TASK3/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </div>
+                    <h2>
+                        E-Commerce website
+                    </h2>
+                    <h3>
+                         A simple e-commerce website built with HTML and CSS.
+                    </h3>
+                    <a href="./TASK3/index.html" class="project-btn">
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
+
             </div>
             <!-- Card 8 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header"></div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">  Website Wireframe</h5>
-                        <p class="card-text">A simple wireframe for an e-commerece website.</p>
-                        <a href="./crypto/crypto.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
                     </div>
+                    <h2>
+                       Website Wireframe
+                    </h2>
+                    <h3>
+                        A simple wireframe for an e-commerece website.
+                    </h3>
+                    <a href="./crypto/crypto.html" class="project-btn">
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-
-
-
         </div>
     </div>
+    <br><br>
 
 
     <!-- ====FOOTER === -->
@@ -228,10 +318,10 @@
     <footer class="text-center  text-light p-3" style="background-color: #043978;">
 
         <p>
-            © 2026 HTML Projects | GitHub Pages
+            © 2026 My All Practice Projects | GitHub Pages
         </p>
     </footer>
-    <!-- Bootstrap JS -->
+    
 
 </body>
 

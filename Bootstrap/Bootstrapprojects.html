@@ -16,6 +16,8 @@
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
 
     <style>
         * {
@@ -27,31 +29,89 @@
         body {
             font-family: Arial, sans-serif;
             color: #ffffff;
-            background-color: rgb(22, 36, 67);
+            background-color: rgba(17, 32, 62, 0.908);
         }
 
 
         /*  HEADER  */
 
         header {
-            background: linear-gradient(135deg, #052449, #183b64, #599ae9);
+            background: linear-gradient(135deg, #1e426d, #183b64, #4375b1);
             color: white;
             text-align: center;
             padding: 55px 20px;
         }
 
 
-        .card {
+        .project-card {
             background: transparent;
-            border: 2px solid #0d6efd;
-            border-radius: 10px;
+            border: 1px solid white;
+            border-radius: 18px;
+            padding: 35px 25px;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
+            text-align: center;
+            color: white;
         }
 
-        .card:hover {
+        .project-card:hover {
             border-color: #00c6ff;
             transform: translateY(-8px);
             box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+        }
+
+        /* ICON */
+
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef4ff;
+            color: #0969da;
+            border-radius: 50%;
+            font-size: 32px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover .project-icon {
+            background: #0969da;
+            color: white;
+        }
+
+        .project-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+
+        }
+
+        .project-card p {
+            color: #666;
+            line-height: 1.6;
+            min-height: 75px;
+        }
+
+        /* BUTTON */
+
+        .project-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #498ada;
+            color: white;
+            padding: 11px 22px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background: #0969da;
+            color: white;
         }
 
         /*  MOBILE  */
@@ -83,7 +143,7 @@
 
     <header>
 
-        <div class="icon">
+        <div class="project-icon">
             <i class="bi bi-arrow-repeat"></i>
         </div>
 
@@ -102,181 +162,177 @@
         <div class="row">
 
             <!-- Card 1 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 1</h5>
-                        <p class="card-text">Basic Bootstrap Components</p>
-                        <a href="./lec-1 12card/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 1</h2>
+                    <h3>Basic Bootstrap Components </h3>
+                    <a href="./lec-1 12card/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 2</h5>
-                        <p class="card-text">Bootstrap Grid System</p>
-                        <a href="./lec-2 3 4 5/lec-2.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 2</h2>
+                    <h3>Bootstrap Grid System </h3>
+                    <a href="./lec-2 3 4 5/lec-2.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-
             <!-- Card 3 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 3</h5>
-                        <p class="card-text">Bootstrap Components</p>
-                        <a href="./lecture-6/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 3</h2>
+                    <h3>Basic Bootstrap Components </h3>
+                    <a href="./lecture-6/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-
             <!-- Card 4 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 4</h5>
-                        <p class="card-text">Bootstrap Practice Task</p>
-                        <a href="./TASK/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 4</h2>
+                    <h3>Bootstrap Practice Task </h3>
+                    <a href="./TASK/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <!-- Card 5 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 5</h5>
-                        <p class="card-text">Bootstrap Practice Task</p>
-                        <a href="./TASK-2/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 5</h2>
+                    <h3>Bootstrap Practice Task </h3>
+                    <a href="./TASK-2/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <!-- Card 6 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 6</h5>
-                        <p class="card-text">Bootstrap Practice Task</p>
-                        <a href="./TASK-3/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 6</h2>
+                    <h3>Bootstrap Practice Task</h3>
+                    <a href="./TASK-3/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <!-- Card 7 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 7</h5>
-                        <p class="card-text">Bootstrap Practice Task</p>
-                        <a href="./TASK-5/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 7</h2>
+                    <h3>Basic Practice Task </h3>
+                    <a href="./TASK-5/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <!-- Card 8 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 8</h5>
-                        <p class="card-text">Bootstrap Practice Task</p>
-                        <a href="./TASK-6/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 8</h2>
+                    <h3>Bootstrap Practice Task </h3>
+                    <a href="./TASK-6/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <!-- Card 9 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 9</h5>
-                        <p class="card-text">PROJECTS</p>
-                        <a href="./TASK-7/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 9</h2>
+                    <h3>PROJECTS </h3>
+                    <a href="./TASK-7/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <!-- Card 10 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 10</h5>
-                        <p class="card-text">Bootstrap Project</p>
-                        <a href="./PARECTICAL/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 10</h2>
+                    <h3> Bootstrap Project </h3>
+                    <a href="./PARECTICAL/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <!-- Card 11-->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 11</h5>
-                        <p class="card-text">Bootstrap Practice Task</p>
-                        <a href="./Fainal/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 11</h2>
+                    <h3>Basic practice Components </h3>
+                    <a href="./Fainal/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
             <!-- Card 12 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card border-light mb-3 text-light">
-                    <div class="card-header">Bootstrap</div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap Task 12</h5>
-                        <p class="card-text">Bootstrap Practice Task</p>
-                        <a href="./TASK-4/index.html" class="btn btn-primary">
-                            View Project
-                        </a>
+            <div class="col-lg-4 col-md-6 col-12  mt-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-code-slash"></i>
                     </div>
+                    <h2>Bootstrap Task 12</h2>
+                    <h3>Basic Bootstrap Components </h3>
+                    <a href="./TASK-4/index.html" class="project-btn">
+                        View Programs
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-
-
-
         </div>
     </div>
+    <br><br>
 
 
     <!-- ====FOOTER === -->
@@ -286,7 +342,7 @@
             © 2026 Bootstrap Projects | GitHub Pages
         </p>
     </footer>
-    <!-- Bootstrap JS -->
+
 
 </body>
 
