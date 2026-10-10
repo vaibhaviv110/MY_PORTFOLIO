@@ -146,47 +146,67 @@
 </head>
 
 <body>
-    <header class="fixed-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg text-light sticky-top">
-                <div class="container-fluid">
+   
+<header class="fixed-header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg text-light">
+            <div class="container-fluid "  aria-expanded="true">
 
-                    <a class="navbar-brand fw-bold" href="#">
-                        <span class="text-primary fw-bold fs-5">V</span>aibhavi
-                    </a>
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold" href="#home">
+                    <span class="text-primary fs-5">V</span>aibhavi
+                </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
 
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#about">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#contact">Contact Us</a>
-                            </li>
-                        </ul>
-                        <a href="./vaibhavi vaghasiya.pdf" target="_blank"
-                            class="btn btn-primary mt-4 px-4 py-2 rounded-pill fw-bold">
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Resume Button -->
+                    <div class="d-grid d-lg-block text-center">
+                        <a href="./vaibhavi vaghasiya.pdf"
+                            target="_blank"
+                            class="btn btn-primary px-4 py-2 rounded-pill fw-bold">
+
                             <i class="fa-solid fa-download me-2"></i>
                             Download Resume
                         </a>
                     </div>
+
                 </div>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
+    </div>
+</header>
+
     <br><br>
     <div class="container p-3 mt-3" id="home">
         <div class="row align-items-center min-vh-50">
@@ -501,7 +521,7 @@
                 </div>
 
             </div>
-            <!-- Videos part -->
+            <!-- Videos part clanguage -->
             <div class="col-12 col-md-6 col-lg-4 mt-4">
                 <div class="card p-2">
                     <img src="./images/recordings.png" class="card-img-top" alt="video recording." style="height:225px">
@@ -515,6 +535,22 @@
                 </div>
 
             </div>
+
+
+             <!-- Videos part C++ -->
+            <div class="col-12 col-md-6 col-lg-4 mt-4">
+                <div class="card p-2">
+                    <img src="./images/c++recording.png" class="card-img-top" alt="video recording." style="height:225px">
+                    <div class="card-body">
+                        <h5 class="card-title">C++ Language Video Recordings</h5>
+                        <p class="card-text">Explore my C++ programming video recordings covering classes, objects, inheritance, polymorphism, and other OOP concepts.</p>
+                        <a href="https://vaibhaviv110.github.io/Improve-OOP/" class="btn btn-primary" target="_blank">View
+                            All Videos Recording 🎥</a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
     <br><br>
