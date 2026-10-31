@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Desboard</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .sidebar-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            transition: 0.3s;
+            gap: 8px;
+        }
+
+        .sidebar-icon:hover {
+            background: linear-gradient(90deg, red, black);
+            color: white;
+        }
+
+        .sidebar-icon:hover i {
+            transform: scale(1.1);
+        }
+
+        .sidebar-icon i {
+            transition: 0.3s;
+        }
+
+
+        .user {
+            transition: 0.3s;
+        }
+
+        .user:hover {
+            background: linear-gradient(90deg, #ff1725, #2d2d2d);
+        }
+
+        .user:hover h6,
+        .user:hover p,
+        .user:hover i {
+            color: white;
+        }
+
+        .hour-text {
+            color: red;
+        }
+
+        .hour-text:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+
+
+<body class="text-white" style="background-color: black;">
+
+    <!-- Main Layout -->
+    <div class="container-fluid p-0 m-0">
+
+        <div class="row g-0">
+
+            <!-- Left Sidebar -->
+            <div class="col-auto text-center vh-100 position-fixed top-0 start-0"
+                style="width: 86px; background-color: #2b2929aa;">
+
+
+                <h1 class="text-danger fw-bold mb-5 mt-2" style="font-size: 55px;">
+                    N
+                </h1>
+
+                <div class="d-flex flex-column align-items-center text-white fs-4" style="gap: 10px;">
+                    <!--side icon-->
+                    <div class="d-flex flex-column align-items-center gap-5 text-white fs-4">
+
+                        <a href="#" class="sidebar-icon text-white">
+                            <i class="fa-regular fa-comment-dots"></i>
+                        </a>
+
+                        <a href="#" class="sidebar-icon text-white">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+
+                        <a href="#" class="sidebar-icon text-white">
+                            <i class="fa-solid fa-users"></i>
+                        </a>
+
+                        <a href="#" class="sidebar-icon text-white">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+
+                        <a href="#" class="sidebar-icon text-white">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
+
+                        <a href="#" class="sidebar-icon text-white">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Side-->
+            <div class="col">
+
+                <!-- Header -->
+                <nav class=" container navbar text-white py-3" style="background-color: #272626aa;">
+                    <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+                        <!-- Search Bar -->
+                        <form class="d-flex align-items-center"
+                            style="width: 370px; max-width: 100%; height: 50px; background-color: #2d2d2d; border-radius: 12px; padding: 0 15px 0 20px;">
+                            <input type="search" class="form-control border-0 shadow-none"
+                                placeholder="Type here to Search..." style="background: transparent; color: white;">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #b8c0c8; font-size: 22px;"></i>
+                        </form>
+
+                        <!-- Header Items -->
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="./logo.jpg" class="rounded-circle"
+                                style="height: 45px; width: 45px; object-fit: cover;" alt="Flag">
+                            <i class="fa-solid fa-bell text-danger fs-4"></i>
+                            <i class="fa-regular fa-envelope text-danger fs-4 "></i>
+                            <img src="./user.jpg" class="rounded-circle"
+                                style="height: 50px; width: 50px; object-fit: cover;" alt="Profile">
+                            <div>
+                                <h5 class="mb-1 text-white">Jane Copper</h5>
+                                <p class="mb-0 text-white">Medicine Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!--main heading-->
+                <div class=" container bg-trasparent text-white p-4 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h1 class="text-danger fw-bold">Good Evening John...!</h1>
+                        <p>Welcome to nairobi game zone</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn text-white" style="background-color: #750B0A;">More
+                            Games</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--MAIN SECTION-->
+    <div class="container p-1">
+        <div class="row align-items-center rounded-5 p-5 py-0" style="background-color: #2d2d2d; height: 400px; ">
+            <div class="col-md-4 text-white">
+                <h5>Video Games</h5>
+                <h1 class="fw-bold">Let The <span class="text-danger">Matriarchy</span> Begin</h1>
+
+                <button class="btn btn-danger mt-4 fw-bold p-2 fs-5">Know more</button>
+                <button class="btn btn-light text-danger mt-4 fw-bold p-2 fs-5" style="width: 100px;">Play</button>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="./avtar img.png" alt="image" class="img-fluid" style="height: 400px; object-fit: contain;">
+            </div>
+
+            <div class="col-md-4 text-white text-center">
+                <p>Game Starts in: 14:23:59</p>
+                <br><br><br><br>
+                <video controls class="rounded-3" style="height: 180px;">
+                    <source src="./video 1.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!--CARD -->
+    <div class="container px-3 py-3">
+        <div class="row g-4 mt-5">
+            <div class=" col-12 col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2>Upcoming Tournaments</h2>
+                    <a href="" class="text-danger text-decoration-none fs-5">More</a>
+                </div>
+                <div class="row g-3">
+
+                    <!--CARD 1-->
+                    <div class="col-12 col-md-4">
+                        <div class="card p-3 rounded-5 text-white" style=" background-color: #272626aa;">
+                            <img src="./Frame 1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p><span class="text-danger fw-bold"> SEPT 02 </span>STARTING AT 6:00 AM</p>
+                                <h4 class="card-title">COD Warzone Tournament</h4>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-4">
+                                    <p class="text-danger px-3">Prize</p>
+                                    <span><i class="fa-solid fa-trophy text-warning me-1"></i>$ 2500</span>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-danger">Team Size</p>
+                                    <span> <i class="fa-solid fa-maximize text-info"></i> 4 VS 4</span>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-danger">Sponsor</p>
+                                    <span> <i class="fa-brands fa-steam text-primary"></i> Steam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD 2-->
+                    <div class="col-12 col-md-4">
+                        <div class="card p-3 rounded-5 text-white h-100" style=" background-color: #272626aa;">
+                            <img src="./Frame 2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p><span class="text-danger fw-bold"> SEPT 02 </span>STARTING AT 6:00 AM</p>
+                                <h4 class="card-title">COD Warzone Tournament</h4>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-4">
+                                    <p class="text-danger px-3">Prize</p>
+                                    <span><i class="fa-solid fa-trophy text-warning me-1"></i>$ 2500</span>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-danger">Team Size</p>
+                                    <span> <i class="fa-solid fa-maximize text-info"></i> 4 VS 4</span>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-danger">Sponsor</p>
+                                    <span> <i class="fa-brands fa-steam text-primary"></i> Steam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD 3-->
+                    <div class="col-12 col-md-4">
+                        <div class="card p-3 rounded-5 text-white h-100" style=" background-color: #272626aa;">
+                            <img src="./Frame 3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p><span class="text-danger fw-bold"> SEPT 02 </span>STARTING AT 6:00 AM</p>
+                                <h4 class="card-title">COD Warzone Tournament</h4>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-4">
+                                    <p class="text-danger px-3">Prize</p>
+                                    <span><i class="fa-solid fa-trophy text-warning me-1"></i>$ 2500</span>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-danger">Team Size</p>
+                                    <span> <i class="fa-solid fa-maximize text-info"></i> 4 VS 4</span>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-danger">Sponsor</p>
+                                    <span> <i class="fa-brands fa-steam text-primary"></i> Steam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--second cards-->
+                    <div class="mt-5">
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h2>Achievements</h2>
+                            <a href="#" class="text-danger text-decoration-none fs-5">View All</a>
+                        </div>
+
+                        <div class="row g-3 mt-5">
+                            <!--card 1-->
+                            <div class="col-12 col-md-4">
+                                <div class="card bg-dark text-white rounded-4 p-3 h-100">
+                                    <div class="d-flex gap-2 mb-3">
+                                        <span class="badge bg-black text-danger p-2">
+                                            <i class="fa-solid fa-trophy text-warning"></i> 0.0025 ETH
+                                        </span>
+                                        <span class="badge bg-black text-white p-2">
+                                            <i class="fa-regular fa-clock text-white"></i> 22:49:33 </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <img src="./achiv1.png" alt="achivement 1">
+                                        <div>
+                                            <h5 class="mb-0">Win 5 Games</h5>
+                                            <small class="text-danger ">in Amoung Us</small>
+                                        </div>
+                                    </div>
+                                    <div class="progress mb-2" style="height:5px;">
+                                        <div class="progress-bar bg-danger" style="width:40%;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <small class="text-secondary">2/5</small>
+                                        <small class="text-danger">3 Left</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--card 2-->
+                            <div class="col-12 col-md-4">
+                                <div class="card bg-dark text-white rounded-4 p-3 h-100">
+                                    <div class="d-flex gap-2 mb-3">
+                                        <span class="badge bg-black text-danger p-2">
+                                            <i class="fa-solid fa-trophy text-warning"></i> 0.0035 ETH
+                                        </span>
+                                        <span class="badge bg-black text-white p-2">
+                                            <i class="fa-regular fa-clock text-white"></i> 42:29:13 </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <img src="./avi2.png" alt="achivement 1">
+                                        <div>
+                                            <h5 class="mb-0">Win 25 Games</h5>
+                                            <small class="text-danger ">in Amoung Us</small>
+                                        </div>
+                                    </div>
+                                    <div class="progress mb-3" style="height:5px;">
+                                        <div class="progress-bar bg-danger" style="width:40%;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <small class="text-secondary">15/25</small>
+                                        <small class="text-danger">10 Left</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--card 3-->
+                            <div class="col-12 col-md-4">
+                                <div class="card bg-dark text-white rounded-4 p-3 h-100">
+                                    <div class="d-flex gap-2 mb-3">
+                                        <span class="badge bg-black text-danger p-2">
+                                            <i class="fa-solid fa-trophy text-warning"></i> 0.0055 ETH
+                                        </span>
+                                        <span class="badge bg-black text-white p-2">
+                                            <i class="fa-regular fa-clock text-white"></i> 35:49:43 </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <img src="./avi3.png" alt="achivement 1">
+                                        <div>
+                                            <h5 class="mb-0">Win 10 Matches</h5>
+                                            <small class="text-danger ">in Apex legends</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress mb-2" style="height:5px;">
+                                        <div class="progress-bar bg-danger" style="width:40%;"></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <small class="text-secondary">6/10</small>
+                                        <small class="text-danger">4 Left</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--TEAM CHAT SIDEBAR-->
+            <div class="col-12 col-lg-3">
+
+                <div class="card rounded-4 text-white h-100 p-2" style="background-color:#2d2d2d;">
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-0">
+                        <h4 class="p-3 fw-bold">Team Chat</h4>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <!--user 1-->
+                    <div class="user rounded-3 p-2">
+                        <div class="d-flex align-items-center mb-4 mt-3 gap-2">
+                            <img src="./chat 1.png" alt="user 1">
+                            <button class="bg-dark border border-dark rounded-3"><i
+                                    class="fa-solid fa-share text-white"></i></button>
+                            <div class="flex-grow-1">
+                                <h6>Garbial Groomer</h6>
+                                <small class="text-secondary">Level 8</small>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div>
+                            <p class=" ms-4 ps-3 mb-0" style="font-size: 14px;"> Lorem ipsum dolor sit amet, elit sit
+                                consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <!--user 2-->
+                    <div class="user rounded-3 p-2">
+                        <div class="d-flex align-items-center mb-4 mt-3 gap-2">
+                            <img src="./chat 2.png" alt="user 2">
+                            <button class="bg-dark border border-dark rounded-3"><i
+                                    class="fa-solid fa-share text-white"></i></button>
+                            <div class="flex-grow-1">
+                                <h6>Annihilator</h6>
+                                <small class="text-secondary">Level 10</small>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div>
+                            <p class=" ms-4 ps-3 mb-0" style="font-size: 14px;"> Lorem ipsum dolor sit amet, elit sit
+                                consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <!--User 3-->
+                    <div class="user rounded-3 p-2">
+                        <div class="d-flex align-items-center mb-4 mt-3 gap-2">
+                            <img src="./chat 3.png" alt="user 1">
+                            <button class="bg-dark border border-dark rounded-3"><i
+                                    class="fa-solid fa-share text-white"></i></button>
+                            <div class="flex-grow-1">
+                                <h6>Eat Bullets</h6>
+                                <small class="text-secondary">Level 7</small>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div>
+                            <p class=" ms-4 ps-3 mb-0" style="font-size: 14px;"> Lorem ipsum dolor sit amet, elit sit
+                                consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <!--User 4-->
+                    <div class="user rounded-3 p-2">
+                        <div class="d-flex align-items-center mb-4 mt-3 gap-2">
+                            <img src="./chat 4.png" alt="user 1">
+                            <button class="bg-dark border border-dark rounded-3"><i
+                                    class="fa-solid fa-share text-white"></i></button>
+
+                            <div class="flex-grow-1">
+                                <h6>Evillious Energy</h6>
+                                <small class="text-secondary">Level 5</small>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div>
+                            <p class=" ms-4 ps-3 mb-0" style="font-size: 14px;"> Lorem ipsum dolor sit amet, elit sit
+                                consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <!--User 5-->
+                    <div class="user rounded-3 p-2">
+                        <div class="d-flex align-items-center mb-4 mt-3 gap-2">
+                            <img src="./chat 5.png" alt="user 1">
+                            <button class="bg-dark border border-dark rounded-3"><i
+                                    class="fa-solid fa-share text-white"></i></button>
+                            <div class="flex-grow-1">
+                                <h6>Evillious Energy</h6>
+                                <small class="text-secondary">Level 7</small>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div>
+                            <p class=" ms-4 ps-3 mb-0" style="font-size: 14px;"> Lorem ipsum dolor sit amet, elit sit
+                                consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Challenges Section -->
+    <div class="container px-4 py-4 text-white">
+        <div class="row g-4">
+
+            <!--Challenges -->
+            <div class="col-12 col-xl-9">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <h2 class="fw-bold">Challenges</h2>
+                        <p>Accept the Challenge</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-danger px-4">Time Left</button>
+                        <button class="btn btn-dark px-4">Rewards</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped align-middle mb-0">
+                        <tbody>
+                            <!-- User 1 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="./ch1.png" alt="img1">
+                                        <span>Eat Bullets</span>
+                                    </div>
+                                </td>
+                                <td>Game Mode<br><span>1 × 1</span></td>
+                                <td>Prize Pool<br><span>1000</span></td>
+                                <td>Entry<br><span>500</span></td>
+                                <td>Challenge Experience<br>
+                                    <span class=" hour-text">00H : 15M</span>
+                                </td>
+                            </tr>
+
+                            <!-- User 2 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="./ch2.png" alt="img2">
+                                        <span>Evillious Energy</span>
+                                    </div>
+                                </td>
+                                <td>Game Mode<br><span>1 × 1</span></td>
+                                <td>Prize Pool<br><span>1000</span></td>
+                                <td>Entry<br><span>500</span></td>
+                                <td>Challenge Experience<br>
+                                    <span class="hour-text">00H : 15M</span>
+                                </td>
+                            </tr>
+
+                            <!-- User 3 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="./ch3.png" alt="img3">
+                                        <span>Monstrous Michel</span>
+                                    </div>
+                                </td>
+                                <td>Game Mode<br><span>1 × 1</span></td>
+                                <td>Prize Pool<br><span>1000</span></td>
+                                <td>Entry<br><span>500</span></td>
+                                <td>Challenge Experience<br>
+                                    <span class="hour-text">00H : 15M</span>
+                                </td>
+                            </tr>
+
+                            <!-- User 4 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="./ch4.png" alt="img4">
+                                        <span>Duke of Doom</span>
+                                    </div>
+                                </td>
+                                <td>Game Mode<br><span>1 × 1</span></td>
+                                <td>Prize Pool<br><span>1000</span></td>
+                                <td>Entry<br><span>500</span></td>
+                                <td>Challenge Experience<br>
+                                    <span class="hour-text">00H : 15M</span>
+                                </td>
+                            </tr>
+
+                            <!-- User 5 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="./ch5.png" alt="img5">
+                                        <span>Gabriel Groomer</span>
+                                    </div>
+                                </td>
+                                <td>Game Mode<br><span>1 × 1</span></td>
+                                <td>Prize Pool<br><span>1000</span></td>
+                                <td>Entry<br><span>500</span></td>
+                                <td>Challenge Experience<br>
+                                    <span class="hour-text">00H : 15M</span>
+                                </td>
+                            </tr>
+
+                            <!-- User 6 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="./ch6.png" alt="img6">
+                                        <span>Annihilator</span>
+                                    </div>
+                                </td>
+                                <td>Game Mode<br><span>1 × 1</span></td>
+                                <td>Prize Pool<br><span>1000</span></td>
+                                <td>Entry<br><span>500</span></td>
+                                <td>Challenge Experience<br>
+                                    <span class="hour-text">00H : 15M</span>
+                                </td>
+                            </tr>
+
+                            <!-- User 7 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="./ch7.png" alt="img7">
+                                        <span>Veteran of Death</span>
+                                    </div>
+                                </td>
+                                <td>Game Mode<br><span>1 × 1</span></td>
+                                <td>Prize Pool<br><span>1000</span></td>
+                                <td>Entry<br><span>500</span></td>
+                                <td>Challenge Experience<br>
+                                    <span class="hour-text">00H : 15M</span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--Videos -->
+            <div class="col-12 col-xl-3">
+                <div class="mb-4">
+                    <video controls class="w-100 rounded-4">
+                        <source src="./video 1.webm" type="video/webm">
+                        Your browser does not support video.
+                    </video>
+                </div>
+                <div class="mb-4">
+                    <video controls class="w-100 rounded-4">
+                        <source src="./video 1.webm" type="video/webm">
+                        Your browser does not support video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="container bg-dark text-white py-4 px-3">
+        <div class="d-flex justify-content-between align-items-center gap-5">
+            <div>
+                <a href="" class="text-decoration-none text-white me-3">Privacy Policy</a>
+                <a href="" class="text-decoration-none text-white">Term Of Use</a>
+            </div>
+
+            <div class="text-center">
+                <span>
+                    © 2021 XRay, Made with
+                    <i class="fa-solid fa-heart text-white"></i>
+                    by
+                    <a href="#" class="text-primary text-decoration-none">
+                        IQONIQ Design
+                    </a>.
+                </span>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
